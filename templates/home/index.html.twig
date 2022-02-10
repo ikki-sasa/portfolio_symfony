@@ -1,0 +1,200 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+<!-- about -->
+<section class="section about" id="about">
+    <div class="section-center about-center">
+        <!-- about img -->
+        <article class="about-img">
+            <img src="{{ asset('img/vr-me.jpg') }}" class="hero-photo-vr" alt="vr-img" />
+        </article>
+        <!-- about info -->
+        <article class="about-info">
+            <!-- section title -->
+            <div class="section-title about-title">
+                <h2>À propos</h2>
+                <div class="underline"></div>
+            </div>
+            <!--end of section title -->
+            <p>
+                Issu d'un bac commerce, j'ai poursuivi les études, avec l'obtention
+                d'une licence Attaché commerciale en alternance, cela m'a permis
+                d'acquérir des compétences dans le relationnel et la négociation.
+                Puis, pendant plus de trois ans, j'ai mis mes connaissances au
+                profit de diverses entreprises.
+            </p>
+            <p>
+                Passionné depuis longtemps par l'univers du jeu vidéo, c'est
+                naturellement que je me suis tourné vers ses origines et le web,
+                j'ai ensuite suivi une formation de développement web de 400 h à la
+                3w Academy, posant des bases solides pour continuer dans ce domaine
+                avec l'envie de développer des projets concrets.
+            </p>
+        </article>
+    </div>
+    <section class="section bg-grey">
+        <div class="section-contact about-contact" id="about-contact">
+            <h2>Développeur Web</h2>
+            <div class="underline"></div>
+            <p>
+                Aujourd'hui basé en région parisienne, je suis à la recherche d'une
+                alternance pour compléter une formation de Développeur Full Stack
+                (Back, Front & UX).
+            </p>
+            <ul class="infos-contacts">
+                <li>
+                    <i class="fas fa-circle"></i> <strong>Adresse :</strong> 10 Square
+                    des champs Frétauts
+                </li>
+                <li>
+                    <i class="fas fa-circle"></i>
+                    <strong>Ville :</strong> Palaiseau
+                </li>
+
+                <li>
+                    <i class="fas fa-circle"></i> <strong>Tel :</strong> 06 52 12 26
+                    68
+                </li>
+                <li>
+                    <i class="fas fa-circle"></i>
+                    <strong>Mail :</strong> manga.samadjine@3wa.io
+                </li>
+
+                <li><i class="fas fa-circle"></i> <strong>Age :</strong> 34 ans</li>
+                <li>
+                    <i class="fas fa-circle"></i> <strong>Git :</strong>
+                    <i class="fas fa-circle"></i>
+                    <a target="_blank" href="https://github.com/ikki-sasa" class="social-icon"
+                        title="Lien vers le git">Git</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</section>
+<!-- end of about -->
+
+<!-- skills -->
+<section class="section skills" id="skills">
+    <!-- section title -->
+    <div class="section-title">
+        <h2>Compétences</h2>
+        <div class="underline"></div>
+        <p class="skills-text">
+            Vous retrouverez ici les compétences que j'ai pu me construire dans le
+            développement web. Ajoutez à cela une aisance particulière pour le
+            Html et le Css et une attirance particulière pour Js, et un niveau
+            débutant sur React, vous aurez une assez bonne vision de ce que j'ai
+            appris jusqu'ici.
+        </p>
+    </div>
+    <!--end of section title -->
+
+    <div class="skills-center section-center">
+        <!-- single skill -->
+        <article class="skill">
+            <i class="fas fa-code skill-icon"></i>
+            <h4>Front end</h4>
+            <div class="underline"></div>
+            <img src="{{ asset('img/logo-javascript.png') }}" alt="logo-javascript" class="logo-img" />
+            <p>Javascript</p>
+            <img src="{{ asset('img/css-logo.png') }}" alt="logo-css" class="logo-img" />
+            <p>Css3</p>
+            <img src="{{ asset('img/react.png') }}" alt="logo-react" class="logo-img" />
+            <p>React</p>
+        </article>
+        <!-- end of single skill -->
+        <!-- single skill -->
+        <article class="skill">
+            <i class="fab fa-connectdevelop skill-icon"></i>
+            <h4>Back end</h4>
+            <div class="underline"></div>
+            <img src="{{ asset('img/php.png') }}" alt="logo-php" class="logo-img" />
+            <p>Php</p>
+            <img src="{{ asset('img/Symfony-logo.png') }}" alt="logo-node" class="logo-img" />
+            <p>Symfony</p>
+            <img src="{{ asset('img/mysql.png') }}" alt="logo-mysql" class="logo-img" />
+            <p>Mysql</p>
+        </article>
+        <!-- end of single skill -->
+    </div>
+</section>
+<!-- end of skills -->
+
+<!-- projects -->
+<section class="section projects" id="projects">
+    <!-- section title -->
+    <div class="section-title">
+        <h2>projets Web</h2>
+        <div class="underline"></div>
+        <p class="projects-text"></p>
+    </div>
+    <!--end of section title -->
+    <div class="section-center projects-center">
+        <!-- single project -->
+        <a target="_blank" href="https://yoga-yoga-616a18.netlify.app" class="project-1" title="Aller à la page Yoga">
+            <article class="project">
+                <img src="{{ asset('img/yooga.jpg') }}" alt="yoga project" class="project-img" />
+                <div class="project-info">
+                    <h4>Yoga project</h4>
+                    <p>Site vitrine</p>
+                </div>
+            </article>
+        </a>
+        <!-- end of single project -->
+        <!-- single project -->
+        <a target="_blank" href="https://choco-under-construction.netlify.app" class="project-2"
+            title="Aller à la page Les amoureux du chocolat">
+            <article class="project">
+                <img src="{{ asset('img/chocolat.jpg') }}" alt="Les amoureux du chocolat" class="project-img" />
+                <div class="project-info">
+                    <h4>Les amoureux du chocolat</h4>
+                    <p>
+                        Projet de site vitrine avec un back-office pour une gestion
+                        autonome du site pour l'artisan Site réalisé en langage js
+                        vanilla php vanilla
+                    </p>
+                </div>
+            </article>
+        </a>
+        <!-- end of single project -->
+        <!-- single project -->
+        <a target="_blank" href="http://beer4you-project.atwebpages.com/index.php/" class="project-3"
+            title="Aller à la page Beer for you">
+            <article class="project">
+                <img src="{{ asset('img/beers.jpg') }}" alt="Beer for you" class="project-img" />
+                <div class="project-info">
+                    <h4>Beer for you</h4>
+                    <p>
+                        Projet d'initiation Php dans le cadre de ma formation
+                        "développeur web" à la 3w Academy
+                    </p>
+                </div>
+            </article>
+        </a>
+        <!-- end of single project -->
+        <!-- single project -->
+        <a target="_blank" href="https://freshly-restaurant-bs.netlify.app" class="project-4"
+            title="Aller à la page Freshly-Restaurant">
+            <article class="project">
+                <img src="{{ asset('img/freshly.jpg') }}" alt="single project" class="project-img" />
+                <div class="project-info">
+                    <h4>Freshly Restaurant</h4>
+                    <p>
+                        Projet d'intégration au sein de ma formation "développeur web" à
+                        la 3w Acdemy
+                    </p>
+                </div>
+            </article>
+        </a>
+        <!-- end of single project -->
+    </div>
+    <p>
+        Retrouvez le code de ce site sur mon
+        <a target="_blank" href="https://github.com/ikki-sasa" title="Lien vers le git">
+            <strong>Github</strong></a>
+    </p>
+</section>
+<!-- end of projects -->
+{% endblock %}
