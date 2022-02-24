@@ -1,0 +1,11 @@
+<h2>Coordonnées du contact</h2>
+<ul>
+    <li>Nom : {{ prenom }} {{nom|upper}} </li>
+    <li>Email : {{ adresseEmail }} </li>
+</ul>
+
+<h2>Objet : {{ objet }} </h2>
+
+<h2>Message : </h2>
+<p>{{ message|nl2br }}</p>
+{# nl2br — Insère un retour à la ligne HTML à chaque nouvelle ligne #}
